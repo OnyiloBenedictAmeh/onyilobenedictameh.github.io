@@ -1,0 +1,235 @@
+body {
+    width: 99%;
+    background-color: rgb(201, 125, 33);
+    font-family: 'Oxygen',serif;
+
+}
+/* ========logo image starts here */
+.logo-image{
+    background-image: url(/images/f.jpg);
+}
+/* ========logo image ends here */
+/* ----- navbar */
+.topnav a {
+    color: rgb(201, 125, 33);
+}
+
+.nav {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.nav a:hover {
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(201, 125, 33);
+    text-decoration: none;
+}
+
+.nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.containe {
+    margin-top: 20px;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#search {
+    width: 350px;
+    box-shadow: 0 0 50px rgb(80, 45, 2);
+    border: 2px solid rgb(80, 45, 2);
+    padding: 10px;
+    outline: none;
+}
+
+.containe button:hover {
+    color: white;
+    background-color: rgb(221, 134, 3);
+}
+
+.containe button {
+    background-color: rgb(201, 125, 33);
+    box-shadow: 0 0 50px rgb(80, 45, 2);
+    border: 2px solid rgb(80, 45, 2);
+    color: black;
+    width: 70px;
+}
+/* =======main content starts here */
+ .jumbotron {
+    box-shadow: 0 0 50px rgb(80, 45, 2);
+    border: 2px solid rgb(80, 45, 2);
+  }
+  .row span{
+    font-family: 'Lora', serif;
+    color: rgb(80, 45, 2);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid rgb(150, 84, 3);
+    overflow: hidden;
+    
+  }
+  #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+  }
+  #menu-tile {
+    background: url('../coursera-project/image/menu-tile.jpg') no-repeat;
+    background-position: center;
+  }
+  #specials-tile {
+    background: url('../coursera-project/image/menu-tile.jpg') no-repeat;
+    background-position: center;
+  }
+  #menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+  }
+/* =======main content ends here */
+
+/* -----------------main */
+.home {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.name {
+    font-weight: 900;
+    color: #111;
+    font-size: 50px;
+}
+
+.skills {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
+
+.home span {
+    color: #fff;
+}
+
+.row button{
+    margin-left: 90px;
+    display: flex;
+    color: rgb(150, 84, 3);
+    justify-content: center;
+}
+
+/* ------------------------ footer */
+.panel-footer .links p {
+    text-align: center;
+}
+
+.panel-footer .links span {
+
+    display: flex;
+    justify-content: center;
+}
+
+.panel-footer {
+    color: #fff;
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+}
+
+.panel-footer div.row {
+    margin-bottom: 35px;
+}
+
+.text-center strong {
+    color: rgb(201, 125, 33);
+}
+
+/* media queries for Large devices only*/
+@media (min-width: 1200px) {
+    .jumbotron {
+        background: url(/banner.jpg);
+        height: 675px;
+    }
+}
+
+/* =========medium devices only*/
+@media (min-width:992px) and (max-width: 1199) {
+    .container .jumbotron {
+        background: url(zebras-8403717_640.jpg);
+        height: 558px;
+    }
+    .name {
+        font-weight: 900;
+        color: #111;
+        font-size: 30px;
+    }
+    
+    .skills {
+        font-size: 19px;
+        display: flex;
+        justify-content: center;
+        color: blue;
+    }
+}
+
+/* =========small deveices only */
+@media (min-width: 768) and (max-width:991) {
+    .container .jumbotron {
+        background: url(/banner.jpg);
+        height: 432px;
+    }
+
+    .nav {
+        display: block;
+        justify-content: center;
+    }
+
+    
+}
+
+/* ==================extra small devices only */
+@media (max-width:767) {
+    .jumbotron {
+        background: url(/banner.jpg);
+    }
+     /* Home Page */
+     .container .jumbotron {
+        margin-top: 30px;
+        padding: 0;
+      }
+      #menu-tile, #specials-tile {
+        width: 360px;
+        margin: 0 auto 15px;
+      }
+   
+}
+
+/* super extra small devices only */
+@media(max-width: 479px) {
+    .jumbotron {
+        background: url(/banner.jpg);
+    }
+}
