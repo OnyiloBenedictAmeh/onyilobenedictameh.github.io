@@ -1,37 +1,66 @@
 body {
-    width: 99%;
     background-color: rgb(201, 125, 33);
     font-family: 'Oxygen',serif;
-
+    font-size: 16px;
+}
+/* ========header */
+#header-nav{
+    background-color: #fff;
+    border-radius: 0;
+    border: 0;
+}
+.heading{
+    text-align: center;
+    font-family: 'lora', serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+#nav-list {
+    margin-top: 10px;
+}
+#nav-list a{
+    color: rgb(201, 125, 33);
+    text-align: center;
+}
+#nav-list a:hover{
+    background: #e7e7e7;
+}
+#nav-list span{
+    font-size: 1.8em;
+}
+#phone{
+    margin-top: 5px;
+}
+#phone a {  /* phone number */ 
+    text-align: right;
+    padding-bottom: 0;
+}
+#phone div {/* we offer */
+    color: rgb(201, 125, 33);
+    text-align: right;
+    padding-right: 15px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid rgb(201, 125, 33);
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
 }
 /* ========logo image starts here */
 .logo-image{
     background-image: url(/images/f.jpg);
 }
 /* ========logo image ends here */
-/* ----- navbar */
-.topnav a {
-    color: rgb(201, 125, 33);
-}
-
-.nav {
-    background-color: #fff;
-    padding: 10px;
-}
-
-.nav a:hover {
-    padding: 10px;
-    color: #fff;
-    background-color: rgb(201, 125, 33);
-    text-decoration: none;
-}
-
-.nav a {
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
-
+/* =========== this is the search area and it starts here */
 .containe {
     margin-top: 20px;
     padding: 60px;
@@ -59,6 +88,8 @@ body {
     color: black;
     width: 70px;
 }
+/* =========== this is the search area and it ends here */
+
 /* =======main content starts here */
  .jumbotron {
     box-shadow: 0 0 50px rgb(80, 45, 2);
@@ -123,8 +154,6 @@ body {
 
 .skills {
     font-size: 30px;
-    display: flex;
-    justify-content: center;
     color: blue;
 }
 
@@ -223,6 +252,21 @@ body {
       #menu-tile, #specials-tile {
         width: 360px;
         margin: 0 auto 15px;
+      }
+      #call-btn > a{
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        background-color: #f6b319;
+        border: 2px solid #fff;
+        color: rgb(201, 125, 33);
+      }
+      #xs-freelancing{
+        margin-top: 5px;
+        font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
       }
    
 }
