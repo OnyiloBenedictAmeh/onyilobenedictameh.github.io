@@ -57,7 +57,7 @@ body {
 }
 /* ========logo image starts here */
 .logo-image{
-    background-image: url(/images/f.jpg);
+    background-image: url(oba/images/f.jpg);
 }
 /* ========logo image ends here */
 /* =========== this is the search area and it starts here */
@@ -97,7 +97,7 @@ body {
   }
   .row span{
     font-family: 'Lora', serif;
-    color: rgb(80, 45, 2);
+    color: rgb(201, 125, 33);
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
@@ -253,7 +253,7 @@ body {
         width: 360px;
         margin: 0 auto 15px;
       }
-      #call-btn > a{
+      div #call-btn .visible-xs{
         font-size: 1.5em;
         display: block;
         margin: 0 20px;
