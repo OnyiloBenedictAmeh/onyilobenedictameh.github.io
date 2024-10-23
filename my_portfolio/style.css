@@ -481,7 +481,7 @@ margin-bottom: 25px;
     margin: 0 auto 30px;
     text-align: center;
 }
-.service .service-item .service-item-inner .icon .fa{
+.service .service-item .service-item-inner .icon .fa, .fa-regular, .fa-brands, .fa-solid{
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
