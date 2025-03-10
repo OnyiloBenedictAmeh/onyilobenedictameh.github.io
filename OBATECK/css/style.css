@@ -54,17 +54,17 @@ section {
   padding: 1rem 3rem;
   border-radius: 8px;
   cursor: pointer;
-  background: #487DE7;
+  background: #0856f1;
   font-size: 2rem;
   text-transform: capitalize;
   color: #fff;
-  border: 0.2rem solid #000;
 }
 
 .btn:hover {
-  background: #0856f1;
+  border: 0.2rem solid #fff;
+  background: #fff;
   border-color: #fff;
-  color: #fff;
+  color: #487DE7;
 }
 
 .header .contact-info {
