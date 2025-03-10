@@ -142,3 +142,16 @@ function showPaginationControls(results) {
 }
 
 document.addEventListener("DOMContentLoaded", loadSearchResults);
+
+function expandSearch() {
+   let searchInput = document.getElementById('searchInput');
+   searchInput.style.width = "300px"; // Expands search bar
+}
+
+// Shrinks search bar when clicking outside
+document.addEventListener("click", function(event) {
+   let searchInput = document.getElementById('searchInput');
+   if (!searchInput.contains(event.target)) {
+      searchInput.style.width = "200px"; // Shrinks back to default
+   }
+});

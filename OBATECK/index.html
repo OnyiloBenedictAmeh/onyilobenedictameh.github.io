@@ -16,22 +16,11 @@
 <link rel="icon" href="/OBATECK/OBATECK trade mark.png">
 <body>
 <!-- header section starts  -->
-
 <header class="header">
    <nav class="navbar">
       <a href="/OBATECK/index.html">
          <img src="/OBATECK/OBATECK LGO.png" alt="" style="width: 290px; height: 100px;">
       </a>
-      <form action="/OBATECK/search.html" method="GET">
-         <input type="text" name="q" placeholder="Search for manuals, repairs, tools..." required>
-         <button type="submit">Search</button>
-      </form>
-      
-      <!-- <div class="search-container">
-         <input type="text" id="searchInput" placeholder="Search manuals, parts, tools..." onkeyup="showSuggestions()">
-         <button onclick="performSearch()" class="search-btn"><i class="fas fa-search"></i></button>
-         <div id="suggestions"></div>
-      </div> -->
 
       <div class="links">
          <a href="about.html">about</a>
@@ -42,9 +31,142 @@
          <a href="contact.html">contact</a>
       </div>
 
+      <div class="auth-buttons">
+            <a href="auth.html" class="btn signup-btn">Sign Up</a>
+           <a href="auth.html" class="btn login-btn">Login</a>
+      </div>
+
       <div id="menu-btn" class="fa fa-bars"></div>
    </nav>
 </header>
+
+<!-- Search Bar Below Navbar -->
+<div class="search-container">
+   <form action="/OBATECK/search.html" method="GET" class="search-form">
+      <input type="text" id="searchInput" name="q" placeholder="Search for manuals, repairs, tools..." required>
+      <button type="submit"><i class="fas fa-search"></i></button>
+   </form>
+</div>
+
+<style>
+   /* Navbar Styling */
+   .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   }
+
+   .links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+   }
+
+   /* GitHub-Style Buttons */
+   .auth-buttons {
+      display: flex;
+      gap: 10px;
+   }
+
+   .signup-btn {
+      padding: 8px 15px;
+      background: #238636; /* GitHub Green */
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+   }
+
+   .signup-btn:hover {
+      background: #2ea043;
+   }
+
+   .login-btn {
+      padding: 8px 15px;
+      background: transparent;
+      color: #24292f; /* GitHub's default text color */
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+   }
+
+   .login-btn:hover {
+      background: #f6f8fa;
+   }
+
+   /* Search Bar Below Navbar */
+   .search-container {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0; /* Spaced it down */
+      background: #f8f9fa;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   }
+
+   .search-form {
+      display: flex;
+      align-items: center;
+      width: 60%; /* Increased width */
+      max-width: 600px;
+   }
+
+   .search-form input {
+      width: 100%;
+      padding: 14px; /* Increased height */
+      border: 2px solid #ccc;
+      border-right: none;
+      border-radius: 8px 0 0 8px; /* Rounded left only */
+      font-size: 16px;
+      transition: box-shadow 0.3s ease-in-out;
+   }
+
+   .search-form input:focus {
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+   }
+
+   .search-form button {
+      padding: 14px 20px; /* Bigger button */
+      background: #007BFF;
+      color: #fff;
+      border: 2px solid #007BFF;
+      border-radius: 0 8px 8px 0; /* Rounded right only */
+      cursor: pointer;
+      font-size: 16px;
+   }
+
+   .search-form button i {
+      font-size: 18px;
+   }
+
+   @media (max-width: 768px) {
+      .search-form {
+         width: 80%;
+      }
+   }
+</style>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+      const searchInput = document.getElementById("searchInput");
+
+      searchInput.addEventListener("focus", function () {
+         searchInput.style.width = "100%";
+      });
+
+      searchInput.addEventListener("blur", function () {
+         searchInput.style.width = "100%";
+      });
+   });
+</script>
+
+
+
 
 <!-- Search Results Section -->
 <section id="searchResults"></section>

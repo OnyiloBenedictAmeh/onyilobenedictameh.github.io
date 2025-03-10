@@ -886,4 +886,137 @@ ul{
   margin: 5px;
   padding: 5px 10px;
   cursor: pointer;
+} /* Ensuring the navbar is aligned properly */
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+}
+
+.nav-center {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+/* Keeping the search bar intact */
+.search-form {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+.search-form input {
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.search-form button {
+   padding: 8px 15px;
+   background: #007BFF;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.auth-buttons {
+   display: flex;
+   gap: 10px;
+}
+
+.auth-buttons .btn {
+   padding: 8px 15px;
+   background: #007BFF;
+   color: #fff;
+   border-radius: 5px;
+   text-decoration: none;
+   font-size: 14px;
+}
+
+.auth-buttons .btn:hover {
+   background: #0056b3;
+}
+
+@media (max-width: 768px) {
+   .nav-center {
+      flex-direction: column;
+      gap: 10px;
+   }
+   .auth-buttons {
+      margin-top: 10px;
+   }
+}
+ /* Basic navbar styling */
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Search bar default state */
+.search-form {
+  position: relative;
+}
+
+.search-form input {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: width 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+/* Expanded search bar when clicked */
+.search-form input:focus {
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.search-form button {
+  padding: 8px 15px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Search expands full screen for mobile */
+@media (max-width: 768px) {
+  .search-form input {
+     width: 100px;
+  }
+
+  .search-form input:focus {
+     width: 80vw; /* Expands to 80% of screen width */
+  }
+}
+
+/* Sign-up & Login buttons */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .btn {
+  padding: 8px 15px;
+  background: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.auth-buttons .btn:hover {
+  background: #0056b3;
 }
