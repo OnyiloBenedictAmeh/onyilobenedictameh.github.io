@@ -18,12 +18,20 @@
 <!-- header section starts  -->
 
 <header class="header">
-
-
    <nav class="navbar">
-
-      <a href="/OBATECK/index.html"> <img src="/OBATECK/OBATECK LGO.png" alt="" style="width: 290px; height: 100px;"></a>
-   <!-- <a href="indx.html"  class="logo"> <i class="fas fa-tools"></i> OBATECK LLC </a> -->
+      <a href="/OBATECK/index.html">
+         <img src="/OBATECK/OBATECK LGO.png" alt="" style="width: 290px; height: 100px;">
+      </a>
+      <form action="/OBATECK/search.html" method="GET">
+         <input type="text" name="q" placeholder="Search for manuals, repairs, tools..." required>
+         <button type="submit">Search</button>
+      </form>
+      
+      <!-- <div class="search-container">
+         <input type="text" id="searchInput" placeholder="Search manuals, parts, tools..." onkeyup="showSuggestions()">
+         <button onclick="performSearch()" class="search-btn"><i class="fas fa-search"></i></button>
+         <div id="suggestions"></div>
+      </div> -->
 
       <div class="links">
          <a href="about.html">about</a>
@@ -35,10 +43,11 @@
       </div>
 
       <div id="menu-btn" class="fa fa-bars"></div>
-
    </nav>
-
 </header>
+
+<!-- Search Results Section -->
+<section id="searchResults"></section>
 
 <!-- header section ends -->
 
@@ -125,6 +134,7 @@
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+<script src="/OBATECK/js/search.js"></script>
 
 <script>
    lightGallery(document.querySelector('.gallery .gallery-container'));
