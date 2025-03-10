@@ -189,7 +189,13 @@ color: #fff;
   color: #000;
   padding: 1rem 0;
 }
-
+.content p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #000;
+  padding: 1rem 0;
+  justify-content: center;
+}
 .fun-fact {
   display: -ms-grid;
   display: grid;
@@ -479,6 +485,7 @@ color: #fff;
 
 .reviews .box-container .box:hover {
   background: #000;
+  color: #fff;
 }
 
 .reviews .box-container .box:hover .text p {
@@ -490,7 +497,7 @@ color: #fff;
 }
 
 .reviews .box-container .box .star i {
-  color: #487DE7;
+  color: #ffcc00;
   font-size: 1.7rem;
 }
 
@@ -793,3 +800,22 @@ color: #fff;
   }
 }
 /*# sourceMappingURL=style.css.map */
+.more-text {
+  display: none;
+}
+.btn {
+  display: inline-block;
+  background: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+strong {
+  font-size: 16px;
+}
+ul{
+  font-size: 16px;
+}

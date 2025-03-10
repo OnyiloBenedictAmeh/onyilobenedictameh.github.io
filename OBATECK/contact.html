@@ -45,7 +45,7 @@
 <!-- header section ends -->
 <!-- contact section starts  -->
 
-<section class="contact" id="contact">
+<!-- <section class="contact" id="contact">
 
    <h1 class="heading"> <span>contact</span> us </h1>
 
@@ -69,6 +69,27 @@
 
    </div>
 
+</section> -->
+<section class="contact" id="contact">
+   <h1 class="heading"> <span>Contact</span> Us </h1>
+
+   <div class="row">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3953.643107323867!2d8.506541238904848!3d7.721386767050365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1741343502339!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <form action="send_email.php" method="POST">
+         <h3>Get in Touch</h3>
+         <div class="inputBox">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+         </div>
+         <div class="inputBox">
+            <input type="number" name="phone" placeholder="Phone" required>
+            <input type="text" name="subject" placeholder="Subject">
+         </div>
+         <textarea name="message" placeholder="Message" cols="30" rows="10" required></textarea>
+         <input type="submit" value="Send Message" class="btn">
+      </form>
+   </div>
 </section>
 
 <!-- contact section ends -->
