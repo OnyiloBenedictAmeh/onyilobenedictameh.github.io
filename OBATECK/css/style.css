@@ -45,7 +45,7 @@ section {
 }
 
 .heading span {
-  color: #0000ff;
+  color: #487DE7;
 }
 
 .btn {
@@ -78,7 +78,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #0000ff;
+  background: #487DE7;
 }
 
 .header .contact-info p {
@@ -102,7 +102,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #1f1f1f;
+  background: #11161a;
   border-bottom: 0.2rem solid #000;
   position: relative;
   z-index: 1000;
@@ -121,12 +121,12 @@ section {
 .header .navbar .logo {
   font-size: 2.5rem;
   text-transform: capitalize;
-  color: #0000ff;
+  color: #487DE7;
   font-weight: bolder;
 }
 
 .header .navbar .logo i {
-  color: #0000ff;
+  color: #487DE7;
 }
 
 .header .navbar .links a {
@@ -453,7 +453,7 @@ color: #fff;
 }
 
 .team .box-container .box .content .share a:hover {
-  background: #0000ff;
+  background: #487DE7;
 }
 
 .reviews {
@@ -490,7 +490,7 @@ color: #fff;
 }
 
 .reviews .box-container .box .star i {
-  color: #0000ff;
+  color: #487DE7;
   font-size: 1.7rem;
 }
 
@@ -509,7 +509,7 @@ color: #fff;
           transform: translate(-50%, -50%);
   z-index: -1;
   opacity: .3;
-  color: #0000ff;
+  color: #487DE7;
 }
 
 .reviews .box-container .box .text p {
@@ -613,7 +613,7 @@ color: #fff;
 }
 
 .footer {
-  background: #1f1f1f;
+  background: #11161a;
 }
 
 .footer .box-container {
@@ -705,7 +705,7 @@ color: #fff;
 }
 
 .footer .credit span {
-  color: #0000ff;
+  color: #487DE7;
 }
 
 @media (max-width: 1200px) {
